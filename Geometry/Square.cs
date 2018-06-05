@@ -5,19 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Geometry {
-	class Square {
-		public double LengthofSides { get; set; }
+	class Square : Rectangle {
+		
+		public Square(int sides) : base(sides, sides) {
 
-		public double GetArea() {
-			return LengthofSides * LengthofSides;
 		}
 
-		public double GetPerimeter() {
-			return LengthofSides * 4;
-		}
-
-		public void Print() {
-			Console.WriteLine($"A square with length {LengthofSides} has an area of {GetArea()} and a perimeter of {GetPerimeter()}");
+		public Square () {
 
 		}
 	}
